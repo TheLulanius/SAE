@@ -1,5 +1,4 @@
 import java.text.NumberFormat;
-
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
@@ -26,13 +25,15 @@ public class Druckerkosten {
 
          // add row dynamically into the table      
         for (int i = 500; i<=8000; i=i+500) {
-            double ppk = (fixkosten+(i*kosten))/i; //Preis Pro Kopie
-            if (i<=1500){
-                double mindestkosten = fixkosten+(mindestabgabe*kosten);
+            
+            if (i<=mindestabgabe){
+                double mindestkosten = fixkosten+(fixkosten*0.16);
+                double ppk = mindestkosten/i; //Preis Pro Kopie
                 dtm.addRow(new Object[] { i, n.format(mindestkosten), n.format(ppk) }); 
             }
             else{
-                double gesamtkosten = fixkosten+(i*kosten);
+                double gesamtkosten = (fixkosten+((i-1500)*kosten))*1.16;
+                double ppk = gesamtkosten/i; //Preis Pro Kopie
                 dtm.addRow(new Object[] { i, n.format(gesamtkosten), n.format(ppk) });
             }
             
@@ -43,7 +44,5 @@ public class Druckerkosten {
         frame.add(new JScrollPane(table));
         frame.pack();
         frame.setVisible( true );
-        
-        JOptionPane.showMessageDialog(null,frame);
     }
 }
