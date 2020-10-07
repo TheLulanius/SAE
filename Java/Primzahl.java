@@ -14,6 +14,10 @@ public class Primzahl {
             x = Long.parseLong(e2);
         }
 
+        if (x==1){
+            JOptionPane.showMessageDialog(null, "1 ist keine Primzahl.", "No Primzahl detected", JOptionPane.INFORMATION_MESSAGE);
+        }
+
         for(int i=2; i<x; i++){
             if( x % i !=0){
                 nteilbar.add(i);
@@ -24,10 +28,10 @@ public class Primzahl {
             }
         }
         if (teilbar.isEmpty()){
-            JOptionPane.showMessageDialog(null, "Ihre Zahl "+x+" ist eine Primzahl.");
+            JOptionPane.showMessageDialog(null, "Ihre Zahl "+x+" ist eine Primzahl.", "Primzahl detected", JOptionPane.INFORMATION_MESSAGE);
         }
         else{
-            JOptionPane.showMessageDialog(null, "Ihre Zahl "+x+" ist keine Primzahl und durch folgende Zahlen teilbar:"+teilbar);
+            JOptionPane.showMessageDialog(null, "Ihre Zahl "+x+" ist keine Primzahl und durch folgende Zahlen teilbar:"+teilbar, "No Primzahl detected", JOptionPane.INFORMATION_MESSAGE);
         }
 
     }
