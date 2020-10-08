@@ -20,6 +20,6 @@ public class Grenzwerte {
                 numbers.add(i);
             }
         }
-        JOptionPane.showMessageDialog(null, "Es wurden "+numbers.size()+" ungerade Zahlen gefunden, diese lauten "+numbers);
+        JOptionPane.showMessageDialog(null, "Es wurden "+numbers.size()+" ungerade Zahlen zwischen "+unterergrenzwert+" und "+oberergrenzwert+" gefunden, diese lauten "+numbers);
     }
 }
