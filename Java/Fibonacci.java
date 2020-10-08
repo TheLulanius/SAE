@@ -24,9 +24,6 @@ public class Fibonacci {
                 i++;
             }
             }
-       
-
-            System.out.println(al);
-
+            JOptionPane.showMessageDialog(null, al, "Fibo Hatschie", JOptionPane.INFORMATION_MESSAGE);
     }
 }
