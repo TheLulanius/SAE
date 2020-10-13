@@ -1,5 +1,4 @@
 import java.text.NumberFormat;
-
 import javax.swing.JOptionPane;
 
 public class Verbrauchsrechner {
@@ -10,6 +9,11 @@ public class Verbrauchsrechner {
         
         String eingabe = JOptionPane.showInputDialog("Geben Sie die gefahrene Kilometeranzahl an");
         int strecke = Integer.parseInt(eingabe);
+
+        if (strecke<=0){
+            String e = JOptionPane.showInputDialog(null, "Geben Sie eine Streckenlänge größer Null ein!");
+            strecke = Integer.parseInt(e);
+        }
 
         if (JOptionPane.showConfirmDialog(null, "Wissen Sie die getankte Literanzahl?", "WARNING", JOptionPane.YES_NO_OPTION)==JOptionPane.YES_OPTION){
             String eingabe2 = JOptionPane.showInputDialog(null, "Geben Sie die getankte Menge in Litern ein (Trennung mit . statt mit ,)");
