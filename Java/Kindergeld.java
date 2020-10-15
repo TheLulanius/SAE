@@ -10,11 +10,13 @@ public class Kindergeld {
         int kinder = Integer.parseInt(e2);
 
         if (kinder<=0){
-            JOptionPane.showMessageDialog(null, "Sie sind leider nicht berechtigt Kindergeld zu erhalten!");
+            JOptionPane.showMessageDialog(null, "Sie sind leider nicht berechtigt Kindergeld zu erhalten! Zeug ein paar oder verpiss dich, NÄCHSTER!", "Kindergeldrechner 2020", JOptionPane.ERROR_MESSAGE);
+            System.exit(0);
         }
         else if (kinder>4){
             int zviel = kinder-4;
-            JOptionPane.showMessageDialog(null, "Sie haben leider zu viele Kinder. Bitte werfen Sie mindestens "+zviel+" Kinder von der Klippe um Kindergeld zu erhalten ", "Kindergeldrechner 2020", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Sie haben leider zu viele Kinder. Bitte werfen Sie mindestens "+zviel+" Kinder von der Klippe um Kindergeld zu erhalten ", "Kindergeldrechner 2020", JOptionPane.ERROR_MESSAGE);
+            System.exit(0);
         }
         else{
         if(einkommen<45000){
