@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> b111e9fe6cb8f2bd3606a3d32dee84d1436066b0
 import java.util.ArrayList;
 
 public class Fibonacci {
@@ -25,9 +28,6 @@ public class Fibonacci {
                 i++;
             }
             }
-       
-
-            System.out.println(al);
-
+            JOptionPane.showMessageDialog(null, al, "Fibo Hatschie", JOptionPane.INFORMATION_MESSAGE);
     }
 }

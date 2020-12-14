@@ -1,0 +1,13 @@
+1. Definitonen
+  prozedurales Programmieren: Prozedurales Programmieren ist eine Art des Programmierens bei der angestrebt wird, ein bestimmtes Problem zu lösen, indem man die Menge der dazu benötigten Schritte und deren Abfolge bestimmt, um das gewünschte Ergebnis oder den gewünschten Zustand zu erreichen. Eines der Hauptkonzepte der prozeduralen Programmierung ist der Prozeduraufruf. Eine Prozedur, die auch als Subroutine, Methode oder Funktion bezeichnet wird, enthält eine geordnete Liste von auszuführenden Anweisungen. Eine Prozedur kann jederzeit während der Ausführung durch eine andere Prozedur oder für sich selbst aufgerufen werden.
+  objektorientiertes Programmieren: Objekte können Nachrichten weiterleiten, Nachrichten empfangen und Daten verarbeiten. Ziel der objektorientierten Programmierung ist es, die Flexibilität und die Wartbarkeit von Programmen zu erhöhen.
+
+2. Vorteil OOP
+  Ein Vorteil der objektorientierten Programmierung besteht darin, dass der einmal geschriebene Code künftig vergleichsweise leicht gepflegt und modifiziert werden kann, zum Beispiel weil neue Klassen entworfen werden können, die Eigenschaften und Verhalten von bereits existierenden Klassen erben. Dies verkürzt die Entwicklungszeit erheblich und erleichtert die Anpassung des Programms an eine sich ändernde Umgebung oder neue Anforderungen.
+  
+ 3. Definition
+  Klasse: Eine Klasse definiert die Gesamtheit von Objekten einer bestimmten Art, mit gemeinsamen Eigenschaften, Operationen und Verhalten. In objektorientierten Sprachen ist eine Klasse ein Datentyp.
+  Objekt: Objekte sind Instanzen von Klassen, sie werden mit Hilfe des new-Operator erzeugt. Dabei wird zuerst eine Variable vom Typ der Klasse deklariert. Dieser Variablen wird dann das erzeugte Objekt zugewiesen.
+  
+ 4. Erläuterung
+ Heap: Ist der Speicher, auf dem die eigentlichen Objekte liegen auf den vom Stack, der Speicher auf dem Methoden und Variablen liegen, verwiesen wir

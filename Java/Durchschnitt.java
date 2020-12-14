@@ -19,7 +19,7 @@ public class Durchschnitt {
                 max = max+numbers.get(i);
                 durchschnitt = max/numbers.size();
             }
-    JOptionPane.showMessageDialog(null, "Sie haben "+numbers.size()+" Zahlen eingegeben. Alle eingegebenen Werte ergeben zusammen "+max+" und der Durchschnitt aller eingegebenen Zahlen ist "+durchschnitt);   
+    JOptionPane.showMessageDialog(null, "Sie haben "+numbers.size()+" Zahlen eingegeben. Alle eingegebenen Werte ergeben zusammen "+max+" und der Durchschnitt aller eingegebenen Zahlen ist "+durchschnitt, "Zahlenzählmaschinendings", JOptionPane.INFORMATION_MESSAGE);   
     }
 
 }
