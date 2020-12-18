@@ -47,6 +47,7 @@ public class Kontomanager {
             if (konto != null) {
                 if (konto.getkNr().equals(alt)) {
                     setkNr(konto, neu);
+                    konto.setIBAN(neu); //Neue IBAN mit neuer kNr generieren
                 }
             }
         }
@@ -57,13 +58,21 @@ public class Kontomanager {
             if (konto != null && !konto.equals(k)) {
                 if (k.getkNr().equals(konto.getkNr())) {
                     k.setkNr(k.standardnummer);
-                    return;
+                    return; //Wurde die standardnummer gesetzt, wird die Methode an dieser Stelle beendet
                 }
             }
         }
         k.setkNr(nummer);
     }
 
-    
+    public void switchInhaber(String inhaber, String kInhaber) {  //Für jedes Konto im Array Konten das nicht null ist wird die kNr überprüft. Wenn diese mit dem eingegebenen Wert übereinstimmt, wird der Betrag dem kStand hinzugefügt
+        for (Konto konto : konten) {
+            if (konto != null) {
+                if (konto.getKInhaber().equals(kInhaber)) {
+                    konto.setkInhaber(inhaber);
+                }
+            }
+        }
+    }
 
 }

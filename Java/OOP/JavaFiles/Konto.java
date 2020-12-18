@@ -6,6 +6,7 @@ import java.util.List;
 public class Konto{ 
     private String kNr;
     public String standardnummer = "69";
+    private String standardname = "Mustermann";
     private String kInhaber;
     private double kStand;
     private static int counter=0;
@@ -15,6 +16,7 @@ public class Konto{
     public Konto(){ 
         kStand=0;
         setkNr(standardnummer);
+        setkInhaber(standardname); //Wenn kein Benutzer angegeben wurde, wird Mustermann gesetzt
         setIBAN(iban);
         counter++;
     }
@@ -57,7 +59,7 @@ public class Konto{
         return counter;
     } 
     public String toString() {
-        String kontoinfo = "Kontonummer: "+kNr+" Kontoinhaber: "+kInhaber+" Kontostand: "+kStand+" IBAN: "+iban;
+        String kontoinfo = "Kontonummer: "+kNr+" Kontoinhaber: "+kInhaber+" Kontostand: "+kStand+"€ IBAN: "+iban;
         return kontoinfo;
     }
 

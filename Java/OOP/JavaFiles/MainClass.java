@@ -1,34 +1,20 @@
 package OOP.JavaFiles;
+
+import javax.swing.JOptionPane;
+
 public class MainClass {
     public static void main(String[] args){
-        Kontomanager kmanager = new Kontomanager(3);
+        Kontomanager kmanager = new Kontomanager(2);
         kmanager.kontohinzu(new Konto(), 0);
         kmanager.kontohinzu(new Konto("Huber","12022200",5), 1);
-        kmanager.kontohinzu(new Konto("Rapp","0068882017",900), 2);
 
-
-        kmanager.einzahlen(10000, "69");
-        kmanager.auszahlen(100, "69");
-        kmanager.switchkNr("69", "40223307");
+        kmanager.einzahlen(10000, "0000000069");
+        kmanager.auszahlen(100, "0000000069");
+        kmanager.switchkNr("0000000069", "40223307");
+       // kmanager.switchInhaber("Günther", "Mustermann"); --> zusätzliche Funktion: Nachträglich Benutzer ändern
         
-
-    //     Konto k1 = new Konto();
-
-    //     Konto k2 = new Konto("Huber","12022200",5);
-
-    //     k1.setkNr("40223307");
-
-    //     k1.einzahlen(10000);
-
-    //    // System.out.println("Kontostand k1: "+k1.getKStand());
-
-    //     k1.auszahlen(100);
-
-    //     //System.out.println("Kontostand k1: "+k1.getKStand());
-
-    //     //System.out.println("Kontostand k2: "+k2.getKStand());
-
-    System.out.println(kmanager);
+    
+    JOptionPane.showMessageDialog(null, "Folgende Konten sind bei der JavaBank angelegt: \n"+kmanager, "Kontoinformationen - JavaBank", JOptionPane.INFORMATION_MESSAGE);
 
    }
 
