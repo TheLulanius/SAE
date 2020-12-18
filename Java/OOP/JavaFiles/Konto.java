@@ -59,7 +59,7 @@ public class Konto{
         return counter;
     } 
     public String toString() {
-        String kontoinfo = "Kontonummer: "+kNr+" Kontoinhaber: "+kInhaber+" Kontostand: "+kStand+"€ IBAN: "+iban;
+        String kontoinfo = "Kontoinhaber: "+kInhaber+"\nKontonummer: "+kNr+"\nKontostand: "+kStand+"€\nIBAN: "+iban+"\n\n\n";
         return kontoinfo;
     }
 

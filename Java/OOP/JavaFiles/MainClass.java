@@ -11,7 +11,7 @@ public class MainClass {
         kmanager.einzahlen(10000, "0000000069");
         kmanager.auszahlen(100, "0000000069");
         kmanager.switchkNr("0000000069", "40223307");
-       // kmanager.switchInhaber("Günther", "Mustermann"); --> zusätzliche Funktion: Nachträglich Benutzer ändern
+        //kmanager.switchInhaber("Günther, Erich", "Mustermann"); // zusätzliche Funktion: Nachträglich Benutzer ändern
         
     
     JOptionPane.showMessageDialog(null, "Folgende Konten sind bei der JavaBank angelegt: \n"+kmanager, "Kontoinformationen - JavaBank", JOptionPane.INFORMATION_MESSAGE);
