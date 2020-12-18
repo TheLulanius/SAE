@@ -1,12 +1,11 @@
+package OOP.JavaFiles;
 public class MainClass {
     public static void main(String[] args){
-        Kontomanager kmanager = new Kontomanager(2);
+        Kontomanager kmanager = new Kontomanager(3);
         kmanager.kontohinzu(new Konto(), 0);
         kmanager.kontohinzu(new Konto("Huber","12022200",5), 1);
+        kmanager.kontohinzu(new Konto("Rapp","0068882017",900), 2);
 
-
-        System.out.println(kmanager);
-        System.out.println("");
 
         kmanager.einzahlen(10000, "69");
         kmanager.auszahlen(100, "69");
