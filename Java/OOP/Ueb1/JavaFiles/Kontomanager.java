@@ -1,4 +1,4 @@
-package OOP.JavaFiles;
+package OOP.Ueb1.JavaFiles;
 
 public class Kontomanager {
     private Konto konten[];
