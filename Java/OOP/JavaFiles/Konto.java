@@ -55,7 +55,7 @@ public class Konto{
     public void setkStand (Double kStand){
         this.kStand=kStand;
     }
-    public int getCounter(){
+    public static int getCounter(){
         return counter;
     } 
     public String toString() {
