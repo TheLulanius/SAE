@@ -1,10 +1,10 @@
 package OOP.Ueb2.Java;
 
 public class Bruch {
-    public int zaehler;
-    public int nenner;
-    public int standardzaehler = 0;
-    public int standardnenner = 1;
+    private int zaehler;
+    private int nenner;
+    private int standardzaehler = 0;
+    private int standardnenner = 1;
 
     
     
@@ -40,30 +40,59 @@ public class Bruch {
         return nenner;
     }
 
-    /*public int add(Bruch Bruch) {
+    public Bruch add(Bruch Bruch) {
         int z1 = getZaehler();
-        int z2 = Bruch.getZaehler();
-        int z3 = z1+z2;
-        z3 = zaehler;
+        int z2 = z1+Bruch.getZaehler();
 
         int n1 = getNenner();
-        int n2 = Bruch.getNenner();
-        int n3 = n1+n2;
-        n3 = nenner;
+        int n2 = n1+Bruch.getNenner();
+        return new Bruch(z2, n2);
+    }
 
-        return zaehler,nenner;
-        
+    public Bruch sub(Bruch Bruch) {
+        int z1 = getZaehler();
+        int z2 = z1-Bruch.getZaehler();
+
+        int n1 = getNenner();
+        int n2 = n1-Bruch.getNenner();
+        return new Bruch(z2, n2);
+    }
+
+    public Bruch mult(Bruch Bruch) {
+        int z1 = getZaehler();
+        int z2 = z1*Bruch.getZaehler();
+
+        int n1 = getNenner();
+        int n2 = n1*Bruch.getNenner();
+        return new Bruch(z2, n2);
+    }
+
+    public Bruch div(Bruch Bruch) {
+        int z1 = getZaehler();
+        int z2 = z1*Bruch.getNenner();
+
+        int n1 = getNenner();
+        int n2 = n1*Bruch.getZaehler();
+        return new Bruch(z2, n2);
     }
 
     public static void main(String[] args) {
-        Bruch b1 = new Bruch();
-        Bruch b2 = new Bruch(1, 4);
-        Bruch b3 = new Bruch();
+        Bruch b1 = new Bruch(); // 0/1
+        Bruch b2 = new Bruch(1, 4); // 1/4
+        Bruch b3 = new Bruch(2); // 2/1
 
-        b3=b1.add(b2);
-    } */
+        b1.bruchAusgeben();
+        b2.bruchAusgeben();
+        b3.bruchAusgeben();
+        System.out.println("");
 
+        b1=b2.div(b3);
 
+        b1.bruchAusgeben();
+        b2.bruchAusgeben();
+        b3.bruchAusgeben();
 
+        
+    } 
 }
 
