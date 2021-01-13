@@ -49,6 +49,7 @@ public class Bruch {
         return new Bruch(z2, n2);
     }
 
+    //Rechnungen
     public Bruch sub(Bruch Bruch) {
         int z1 = getZaehler();
         int z2 = z1-Bruch.getZaehler();
@@ -81,6 +82,7 @@ public class Bruch {
         Bruch b2 = new Bruch(1, 4); // 1/4
         Bruch b3 = new Bruch(2); // 2/1
 
+        //Test
         b1.bruchAusgeben();
         b2.bruchAusgeben();
         b3.bruchAusgeben();

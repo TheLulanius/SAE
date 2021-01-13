@@ -20,7 +20,12 @@ public class Rechnerverwaltung {
 
     //Setter
     public void setRechnername(String rechnername){
+        if (rechnername.length() < 15){
+            System.out.println("ERROR");
+            ;
+        }else{
         this.rechnername = rechnername;
+        }
     }
 
     public void setMAC(String mac){
